@@ -1,0 +1,41 @@
+/*Variables*/
+/*SCSS*/
+/*Main Content*/
+header {
+  margin-top: 20px;
+  padding: 0 10px 5px 10px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: none;
+  height: 20px;
+  width: 90%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  -webkit-box-shadow: 0 20px 20px -20px #333;
+          box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: blue;
+  font-size: 48px;
+  height: 15vh;
+}
+/*# sourceMappingURL=style.css.map */

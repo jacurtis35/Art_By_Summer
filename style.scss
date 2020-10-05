@@ -1,0 +1,39 @@
+/*Variables*/
+$h1Size: 48px;
+
+/*SCSS*/
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Main Content*/
+header {
+  margin-top: 20px;
+  padding: 0 10px 5px 10px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: none;
+  height: 20px;
+  width: 90%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px;
+}
+
+h1 {
+  @include flexCenter();
+  color: blue;
+  font-size: $h1Size;
+  height: 15vh;
+}
