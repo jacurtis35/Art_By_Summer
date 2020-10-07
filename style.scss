@@ -5,11 +5,20 @@ $h1Size: 48px;
 @mixin flexCenter {
   display: flex;
   justify-content: start;
-  align-items: start;
+  color: rgb(10, 8, 143);
+  font-size: $h1Size;
+  height: 15vh;
+  padding-left: 20vh;
 }
 
 /*Main Content*/
+body {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
 header {
+  grid-column: 1/4;
   margin-top: 20px;
   padding: 0 10px 5px 10px;
 }
@@ -21,6 +30,7 @@ header {
 }
 
 hr {
+  grid-column: 1/4;
   border: none;
   height: 20px;
   width: 90%;
@@ -28,12 +38,50 @@ hr {
   margin-top: 0;
   border-bottom: 1px solid rgb(48, 4, 170);
   box-shadow: 0 20px 20px -20px rgb(31, 3, 107);
-  margin: -50px auto 10px;
+  margin: -50px auto 40px;
 }
 
 h1 {
   @include flexCenter();
-  color: blue;
-  font-size: $h1Size;
-  height: 15vh;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.navbar {
+  background-color: rgb(48, 4, 170);
+  width: 15vh;
+  height: 30vh;
+  margin-left: 20px;
+}
+
+.navbar a {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vh;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+nav ul li a.current {
+  background-color: white;
+}
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.homeIcon {
+  height: 5vh;
+}
+
+.iIcon {
+  height: 5vh;
 }

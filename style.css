@@ -1,7 +1,18 @@
 /*Variables*/
 /*SCSS*/
 /*Main Content*/
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+}
+
 header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   margin-top: 20px;
   padding: 0 10px 5px 10px;
 }
@@ -13,29 +24,77 @@ header {
 }
 
 hr {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   border: none;
   height: 20px;
   width: 90%;
   height: 50px;
   margin-top: 0;
-  border-bottom: 1px solid rgb(48, 4, 170);
-  -webkit-box-shadow: 0 20px 20px -20px rgb(48, 4, 170);
-          box-shadow: 0 20px 20px -20px rgb(48, 4, 170);
-  margin: -50px auto 10px;
+  border-bottom: 1px solid #3004aa;
+  -webkit-box-shadow: 0 20px 20px -20px #1f036b;
+          box-shadow: 0 20px 20px -20px #1f036b;
+  margin: -50px auto 40px;
 }
 
 h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: blue;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: #0a088f;
   font-size: 48px;
   height: 15vh;
+  padding-left: 20vh;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.navbar {
+  background-color: #3004aa;
+  width: 15vh;
+  height: 30vh;
+  margin-left: 20px;
+}
+
+.navbar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5vh;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #424242;
+}
+
+nav ul li a.current {
+  background-color: white;
+}
+
+@media (min-height: 300px) {
+  nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.homeIcon {
+  height: 5vh;
+}
+
+.iIcon {
+  height: 5vh;
 }
 /*# sourceMappingURL=style.css.map */
