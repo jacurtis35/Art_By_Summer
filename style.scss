@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+
 /*Variables*/
 $h1Size: 48px;
 
@@ -7,8 +9,8 @@ $h1Size: 48px;
   justify-content: start;
   color: rgb(10, 8, 143);
   font-size: $h1Size;
-  height: 15vh;
-  padding-left: 7vh;
+  height: 7vh;
+  padding-left: 6vh;
 }
 
 /*Main Content*/
@@ -47,25 +49,40 @@ h1 {
 
 nav ul {
   list-style: none;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0;
+  margin-top: auto;
+  text-align: center;
 }
 
-.navbar {
-  background-color: rgb(48, 4, 170);
-  width: 15vh;
-  height: 30vh;
+nav {
+  background-color: rgb(127, 94, 216);
+  width: 75%;
+  height: 31.5vh;
   margin-left: 20px;
 }
 
+nav li {
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
 .navbar a {
+  float: left;
   display: flex;
   justify-content: space-between;
   padding: 1.5vh;
-  color: white;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(187, 181, 247);
+  width: 60%;
 }
 
 nav ul li a.current {
@@ -79,9 +96,63 @@ nav ul li a.current {
 }
 
 .homeIcon {
-  height: 5vh;
+  height: 4vh;
 }
 
 .iIcon {
   height: 5vh;
+}
+
+.gIcon {
+  height: 4vh;
+}
+
+.cIcon {
+  height: 3vh;
+}
+p {
+  padding: 0 52px;
+  font-size: 24px;
+  font-family: 'Cousine', monospace;
+}
+
+form {
+  margin-left: 60vh;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: rgb(127, 94, 216);
+  border-color: black;
+  box-shadow: 0px 10px 20px -10px black;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: rgb(187, 181, 247);
+  cursor: pointer;
+}
+
+.contact {
+  margin-left: 73vh;
 }

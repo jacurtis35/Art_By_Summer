@@ -21,6 +21,7 @@
     </div>
   </header>
   <hr />
+ 
   <nav class="navbar">
     <ul>
       <li>
@@ -33,23 +34,39 @@
           ><img src="./images/i_icon.png" alt="about" class="iIcon"
         /></a>
       </li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#gallery"><img src="./images/window_icon.png" alt="gallery" class="gIcon"
+        /></a></li>
+      <li><a href="#contact"><img src="./images/contact_icon.png" alt="contact" class="cIcon"
+        /></a></li>
     </ul>
   </nav>
 
   <body>
     <div class="wrapper">
       <div class="home"></div>
-      <div id="about">
-        <h1>About</h1>
-      </div>
-      <div class="gallery">
-        <h1>Gallery</h1>
-      </div>
-      <div class="contact">
-        <h1>Contact</h1>
-      </div>
+        <div id="about">
+          <h1>About</h1>
+          <p class="contents">Hi! I am Summer Curtis and this is my gallery of art. These are acollection of works I have done over the past few years. I hope you enjoy them as much as I did making thme! thank you for stopping by and God bless.
+
+          </p>
+        </div>
+        <div class="gallery">
+          <h1>Gallery</h1>
+        </div>
+        <div class="contact">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form" method="POST" action="">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+
+            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+          </form>
+        </div>
     </div>
   </body>
 </html>
