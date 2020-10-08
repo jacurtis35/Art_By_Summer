@@ -120,6 +120,9 @@ nav ul li a.current {
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   grid-gap: 5px;
+  background-color: rgb(187, 181, 247);
+  margin: 60px 50px 0 0;
+  box-shadow: 10px -10px 10px -10px rgb(138, 137, 137);
 }
 
 .gallery img {
@@ -127,6 +130,7 @@ nav ul li a.current {
   width: 100%;
   object-fit: cover;
   border-radius: 10%;
+  box-shadow: -10px 10px 10px -10px black;
 }
 
 .gallery_item1 {
@@ -172,7 +176,6 @@ nav ul li a.current {
 
 form {
   margin-left: 60vh;
-  transition: all 4s ease-in-out;
 }
 
 .form-control {
