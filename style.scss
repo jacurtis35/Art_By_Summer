@@ -110,7 +110,7 @@ nav ul li a.current {
 .cIcon {
   height: 3vh;
 }
-p {
+.content {
   padding: 0 52px;
   font-size: 24px;
   font-family: 'Cousine', monospace;
@@ -155,4 +155,11 @@ form .submit:hover {
 
 .contact {
   margin-left: 73vh;
+}
+
+footer {
+  grid-row: 4/4;
+  grid-column: 1/4;
+  margin: 2vh 2vh 0 1vh;
+  border-top: 1px solid black;
 }
