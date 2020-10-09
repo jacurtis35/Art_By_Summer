@@ -49,7 +49,6 @@ h1 {
   color: #0a088f;
   font-size: 60px;
   height: 7vh;
-  padding-left: 6vh;
 }
 
 .navbar ul {
@@ -64,7 +63,7 @@ h1 {
   background-color: #7f5ed8;
   width: 5vw;
   height: 30.5vh;
-  margin-left: 20px;
+  margin: 0 20px 0 5px;
 }
 
 nav li {
@@ -123,7 +122,6 @@ nav ul li a.current {
 }
 
 .content {
-  padding: 0 52px;
   font-size: 24px;
   font-family: "Sansita Swashed", cursive;
 }

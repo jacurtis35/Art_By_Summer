@@ -10,7 +10,6 @@ $h1Size: 60px;
   color: rgb(10, 8, 143);
   font-size: $h1Size;
   height: 7vh;
-  padding-left: 6vh;
 }
 
 /*Main Content*/
@@ -59,7 +58,7 @@ h1 {
   background-color: rgb(127, 94, 216);
   width: 5vw;
   height: 30.5vh;
-  margin-left: 20px;
+  margin: 0 20px 0 5px;
 }
 
 nav li {
@@ -110,7 +109,6 @@ nav ul li a.current {
   height: 2vw;
 }
 .content {
-  padding: 0 52px;
   font-size: 24px;
   font-family: "Sansita Swashed", cursive;
 }
