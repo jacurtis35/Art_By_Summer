@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 /*Variables*/
 /*SCSS*/
 /*Main Content*/
@@ -65,7 +69,7 @@ h1 {
           box-shadow: 0 20px 30px -10px #5c5858;
   background-color: #7f5ed8;
   width: auto;
-  height: 29vh;
+  height: 27vh;
   margin: 0 20px 0 5px;
 }
 
@@ -136,19 +140,30 @@ nav ul li a.current {
       grid-template-rows: auto auto auto auto;
   grid-gap: 5px;
   background-color: #bbb5f7;
-  margin: 60px 50px 0 0;
+  margin: 60px 40px 0 0;
   -webkit-box-shadow: 10px -10px 10px -10px #8a8989;
           box-shadow: 10px -10px 10px -10px #8a8989;
 }
 
 .gallery img {
-  height: 55vh;
-  width: 100%;
+  height: 40vh;
+  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 30px 0 30px 4.5vw;
   border-radius: 10%;
   -webkit-box-shadow: -10px 10px 10px -10px black;
           box-shadow: -10px 10px 10px -10px black;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  cursor: pointer;
 }
 
 .gallery_item1 {
@@ -290,5 +305,42 @@ footer a {
 .fa:hover {
   opacity: 0.7;
   color: #3B5998;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-row {
+    width: 75%;
+  }
+  .gallery {
+    display: block;
+    width: 70%;
+  }
+  .galley img {
+    display: block;
+    width: 70%;
+  }
+  .navbar {
+    height: 23vh;
+  }
+  .icon {
+    height: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .wrapper {
+    width: 65%;
+  }
+  .logo-row {
+    width: 50%;
+  }
+  .gallery {
+    display: block;
+    width: 50%;
+  }
+  .galley img {
+    display: block;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
