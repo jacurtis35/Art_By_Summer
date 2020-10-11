@@ -209,7 +209,7 @@ nav ul li a.current {
 }
 
 form {
-  margin-left: 60vh;
+  margin-left: 33vw;
 }
 
 .form-control {
@@ -247,7 +247,7 @@ form .submit:hover {
 
 .contact {
   margin-top: 10vh;
-  margin-left: 73vh;
+  margin-left: 40vw;
 }
 
 footer {
@@ -267,6 +267,8 @@ footer {
 footer p {
   font-size: 16px;
   padding-left: 15px;
+  padding-top: 10px;
+  font-weight: bold;
 }
 
 footer a {
@@ -280,8 +282,9 @@ footer a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  padding-top: 15px;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .fa:hover {
