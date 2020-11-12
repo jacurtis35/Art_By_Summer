@@ -1,2 +1,2 @@
 # Art_By_Summer
- Summer's Art Gallery
+Art gallery that presents a local artist's work
